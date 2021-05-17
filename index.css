@@ -6,3 +6,10 @@
  .footer {
      padding-left: 50px;
  }
+ img {
+     display:flex;
+     padding-left: 60%;
+     margin-top: -50px;
+     max-width: 150px;
+     max-height: 200px;
+ }
