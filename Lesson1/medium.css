@@ -9,9 +9,11 @@
     header, footer {
         border-radius: 38px;
     }
-    header img {        
-        float: right;
-        border-radius: 0 10px 0 0;
+    .self-portrait{
+        position: absolute;
+    }
+    .header{
+        text-align: left;
     }
 }
 

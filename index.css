@@ -5,13 +5,36 @@
     padding: 1em;
  }
  .footer {
-     padding-left: 50px;
+     text-align: center;
+     padding: 5px;
  }
- img {
-     display:flex;
-     padding-left: 60%;
-     margin-top: -50px;
-     margin-bottom: -100px;
-     max-width: 150px;
-     max-height: 200px;
+ .footer h4, .footer p{
+     margin: 0;
  }
+ .self-portrait {
+     top:5px;
+     right:5px;
+     position: absolute;
+     max-width: 175px;
+     z-index: 999;
+     border-radius: 15px;
+ }
+ .name {
+    justify-items: center;      
+    margin-left: 20px;
+  }
+  .assignmentName {
+    justify-items: center;
+    border-bottom: 10px black;
+    margin-left: 25px;      
+  }
+  .updateTracker{    
+    color: yellow;    
+  }
+  .header, .footer{
+    background-color: lightslategray;
+    color:black;
+    border-radius: 15px;
+    position: relative;
+  }
+  
