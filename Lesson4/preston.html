@@ -5,23 +5,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css"/>
-    
+    <script src="js/index.js" defer type="text/javascript"></script>
 </head>
 
 <body>
-    <header>
+    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    <header id="menu">
         <nav>
-            <a href="index.html">
+            <a href="home.html">
                 <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
             </a>
-            <a class="active" href="color-scheme.html">
-                <span>Color Scheme</span>
+            <a class="active" href="preston.html">
+                <span>Preston</span>
             </a>
-            <a href="target-audience.html">
-                <span>Target Audience</span>
+            <a href="fishHaven.html">
+                <span>Fish Haven</span>
             </a>
-            <a href="typography.html">
-                <span>Typography</span>
+            <a href="sodaSprings.html">
+                <span>Soda Springs</span>
             </a>
         </nav>
     </header>
@@ -30,5 +31,9 @@
         <p>I chose this color-scheme because it has a lot of warm core colors that have been made colder by the tone. 
         This helps create a mysterioius or uncomfortable air with the website that assists with the lovecraftian theme.</p>
     </main>
+
+    <footer>
+        <span id="clock"></span>
+    </footer>
 </body>
 </html> 

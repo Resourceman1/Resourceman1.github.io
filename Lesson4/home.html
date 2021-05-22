@@ -1,31 +1,32 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css"/>
-    
+    <script src="js/index.js" defer type="text/javascript"></script>
 </head>
 
 <body>
-    <header>
+    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    <header id="menu">
         <nav>
-            <a class="active" href="index.html">
-                <img src="images/LovecraftianLogo.png" title="Lovecraftian Weather Service" alt="site icon"/>
+            <a class="active" href="home.html">
+                <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
             </a>
-            <a href="color-scheme.html">
-                <span>Color Scheme</span>
+            <a href="preston.html">
+                <span>Preston</span>
             </a>
-            <a href="target-audience.html">
-                <span>Target Audience</span>
+            <a href="fishHaven.html">
+                <span>Fish Haven</span>
             </a>
-            <a href="typography.html">
-                <span>Typography</span>
+            <a href="sodaSprings.html">
+                <span>Soda Springs</span>
             </a>
         </nav>
     </header>
     <main>
-        <h2>Lovecraftian Weather Service</h2>
         <p>
             Welcome to the Lovecraftian Forecast website. Here we provide accurate weather services with a design theme surrounding the themes of H.P. Lovecraft.
             We use symbols and icons related to his works to display our information, or as references to the severity of certain weather pattterns.
@@ -33,5 +34,9 @@
             We hope you enjoy our work, and hope you enjoy our site even more.
         </p>
     </main>
+
+    <footer>
+        <span id="clock"></span>
+    </footer>
 </body>
 </html> 
