@@ -39,6 +39,9 @@ function toggleMenu() {
 
         clock.innerHTML = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} - ${day}, ${d.getDate()} ${month} ${d.getFullYear()}`;
     }
+    if (day == 4) {
+        window.alert("Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.");
+    }
 
     setInterval(setTime, 1000);
     setTime();
