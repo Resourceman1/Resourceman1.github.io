@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="js/index.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    <header id="menu">
+        <nav>
+            <a href="home.html">
+                <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
+            </a>
+            <a href="preston.html">
+                <span>Preston</span>
+            </a>
+            <a href="fishHaven.html">
+                <span>Fish Haven</span>
+            </a>
+            <a class="active" href="sodaSprings.html">
+                <span>Soda Springs</span>
+            </a>
+            <a href="stormCenter.html">
+                <span>Storm Center</span>
+            </a>
+            <a href="gallery.html">
+                <span>Gallery</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <img class="heroImage" src="Assets/Weather-Hero.jpeg" alt="hero image"/>
+        <h3>The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents - H.P. Lovecraft</h3>
+        <p>
+            "Weather Summary"
+        </p>
+        <section class="fiveDayForecast">
+            <img src="Assets/5DayForecast.jpg" alt="five day forecast"/>
+            <a href='https://www.freepik.com/vectors/background'>Background vector created by macrovector - www.freepik.com</a>
+        </section>
+        <section id="article">
+            <a href="https://www.google.com">Article</a>
+        </section>
+    </main>
+
+    <footer>
+        <span id="clock"></span>
+    </footer>
+</body>
+</html> 
