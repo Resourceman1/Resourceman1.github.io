@@ -101,6 +101,14 @@ main {
         margin: 0 auto;
         padding: 5px;
     }
+    main section.weatherSummary button {
+        display: flex;
+        flex: 1;
+        margin: 0 auto;
+    }
+    main section.weatherSummary div #outputDiv {
+        text-align: center;
+    }
     
 a {
     color: inherit;
