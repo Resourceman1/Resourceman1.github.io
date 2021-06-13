@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="js/index.js" defer type="text/javascript"></script>
+    <script src="js/progressiveLoading.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    <header id="menu">
+        <nav>
+            <a class="active" href="home.html">
+                <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
+            </a>
+            <a href="preston.html">
+                <span>Preston</span>
+            </a>
+            <a href="fishHaven.html">
+                <span>Fish Haven</span>
+            </a>
+            <a href="sodaSprings.html">
+                <span>Soda Springs</span>
+            </a>
+            <a class="active" href="stormCenter.html">
+                <span>Storm Center</span>
+            </a>
+            <a href="gallery.html">
+                <span>Gallery</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-input">
+            <form action="thanks.html" method="POST">
+                <div class="form-control" id="fullName">
+                    <label>Full name</label>
+                    <input type="text" required pattern="[A-Za-z]{5,}" placeholder="Full name" />
+                </div>
+                <div class="form-control" id="email">
+                    <label>Email</label>
+                    <input type="email" placeholder="my.email@example.com" />
+                </div>
+                <div class="form-control" id="phoneNumber">
+                    <label>Phone number</label>
+                    <input type="tel" required />
+                </div>
+                <div class="form-control" id="zipCode">
+                    <label>Zip Code</label>
+                    <input type="number" required />
+                </div>
+                <div class="form-control" id="stormDate">
+                    <label>Storm Date</label>
+                    <input type="date" required />
+                </div>
+                <div class="form-control" id="stormType">
+                    <label>Storm Type</label>
+                    <input list="storm-suggestions" />
+                    <datalist id="storm-suggestions">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div class="form-control" id="stormSeverity">
+                    <label>Storm Severity</label>
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5">Default</option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                    <input type="range" max="10" min="1" value="5" 
+                        required list="tickmarks" oninput="document.getElementById('rating').innerHTML = this.value" />
+                    <span id="rating">5</span>
+                </div>
+                <div class="form-control" id="stormRegion">
+                    <label>Storm Region</label>
+                    <select>
+                        <option disabled>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Sode Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+                <div class="form-control" id="userDanger">
+                    <label>User In-Danger</label>
+                    <label>
+                        <input type="radio" name="user-in-danger-level" value="yes" />
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="user-in-danger-level" value="no" />
+                        No
+                    </label>
+                    <label>
+                        <input type="radio" name="user-in-danger-level" value="maybe" />
+                        Maybe
+                    </label>
+                </div>
+
+                <div class="form-control" id="comments">
+                    <label>Comments:</label>
+                    <textarea placeholder="Type some comments..."></textarea>
+                </div>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span id="clock"></span>
+    </footer>
+</body>
+</html> 
