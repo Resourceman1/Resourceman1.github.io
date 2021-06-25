@@ -1,0 +1,27 @@
+.forecast-container {
+    display: flex;
+    flex-flow: row;
+
+}
+
+    .forecast-container .forecast {
+        display: flex;
+        flex-flow: column;
+        background-color: rgb(10, 207, 233);
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+        .forecast-container .forecast .icon {
+            width: 45px;
+            margin: 0 auto;
+        }
+
+        .forecast-container .forecast .day {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .forecast-container .forecast .weather {
+            text-align: center;
+        }
