@@ -1,6 +1,7 @@
 .forecast-container {
     display: flex;
     flex-flow: row;
+    margin: 0 auto;
 
 }
 
@@ -13,7 +14,7 @@
     }
 
         .forecast-container .forecast .icon {
-            width: 45px;
+            width: 65px;
             margin: 0 auto;
         }
 
@@ -25,3 +26,13 @@
         .forecast-container .forecast .weather {
             text-align: center;
         }
+.weather-container {
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 650px;
+    background-color: rgb(126, 82, 160);
+    border-radius: 5px;
+}
+    

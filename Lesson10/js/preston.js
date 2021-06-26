@@ -32,6 +32,7 @@ function getForecast(cityId, appId) {
 
 async function getWeather() {
     const appId = '01e8eb86dbe39f0ce0b7736e0918e96b';
+    //https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=01e8eb86dbe39f0ce0b7736e0918e96b
     const cityId = '5604473';
 
     const [ weather, forecast ] = await Promise.all([
@@ -67,6 +68,10 @@ function fakeWeather() {
     }
 }
 
+function convertFromKv(temp) {
+    return (temp - 273.15).toFixed(2);
+}
+
 async function imprintWeather() {
 
     const { weather, forecast } = await getWeather();
@@ -80,7 +85,7 @@ async function imprintWeather() {
         const w = day.weather[0];
         const date = days[new Date(day.dt_txt).getDay()];
         const icon = iconTemp.replace("{}", w.icon);
-        const temp = (day.main.temp - 273.15).toFixed(2);
+        const temp = convertFromKv(day.main.temp);
 
         const html = `
         <img src="${icon}" class="icon" />
@@ -94,6 +99,22 @@ async function imprintWeather() {
 
         forecastElement.append(el);
     }
+    
+    const dateLabel = document.getElementById('date');
+    const weatherIcon = document.getElementById('weather-icon');
+    const tempLabel = document.getElementById('temp');
+
+    const temp = convertFromKv(weather.main.temp);
+
+    const todayDate = days[new Date().getDay()];
+    dateLabel.innerText = todayDate;
+    weatherIcon.src = iconTemp.replace("{}", weather.weather[0].icon);
+    tempLabel.innerHTML = temp + "&#176;C";
+
+    console.log('WEATHER', {
+        weather,
+        forecast
+    });
 }
 
 
