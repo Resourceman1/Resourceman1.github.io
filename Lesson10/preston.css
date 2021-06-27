@@ -31,7 +31,7 @@
         .forecast-container .forecast .day {
             display: flex;
             flex: 1;
-            color: darkslateblue;
+            color: black;
             text-align: center;
             text-transform: uppercase;
         }
@@ -39,7 +39,7 @@
         .forecast-container .forecast .weather {
             display: flex;
             flex: 1;
-            color: darkslateblue;
+            color: black;
             text-align: center;
         }
 .weather-container {
