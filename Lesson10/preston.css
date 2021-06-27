@@ -3,6 +3,7 @@
     width: 30%;
     background-color: darkmagenta;
     border-radius: 10px;
+    min-width: 450px;
 }
 .forecast-container {
     display: flex;
