@@ -15,6 +15,7 @@ thead, tr.tableTitle {
 }
     thead .columnTitles {
         font-size: 18px;
+        color: white;
         background-color: #628ca6;
 }
 tbody, .whiteRow {
@@ -24,9 +25,11 @@ tbody, .greyRow {
     background-color: #e7f0ed;
 }
 tbody, tr {
+    color: black;
     font-style: normal;
 }
 tbody, tr .blueBox {
+    color: white;
     background-color: #547f99;
 }
 tbody, tr .italicBox {
