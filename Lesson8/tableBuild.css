@@ -1,0 +1,28 @@
+table {
+    margin: 0 auto;
+    width: 350px;
+    box-shadow: 8px 8px 5px #628ca6;
+}
+    table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+}
+thead, tr.tableTitle {
+    background-color: lightseagreen;
+}
+    thead .columnTitles {
+        background-color: #628ca6;
+}
+tbody, .whiteRow {
+    background-color: #e7ffed;
+}
+tbody, .greyRow {
+    background-color: #e7f0ed;
+}
+tbody, tr, th .blueBox {
+    background-color: #628ca6;
+}
+tfoot, tr {
+    background-color: lightseagreen;
+}
