@@ -1,0 +1,30 @@
+main {
+    flex-flow: row wrap;
+}
+.cards {   
+    margin: 10px;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.prophet {    
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: blueviolet;
+    max-width: 400px;
+}
+    .prophet h2 {
+        color: blue;
+        text-align: center;
+    }
+    .prophet p {
+        text-align: center;
+    }
+    .prophet img {
+        margin: 0 auto;
+        max-width: 350px;
+        padding-bottom: 10px;
+    }

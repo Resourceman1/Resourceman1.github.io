@@ -1,0 +1,29 @@
+.images {
+
+    display: flex;
+    flex-flow: column;
+
+}
+
+.lazy-load {
+    margin: 10px auto;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+    .lazy-load.loaded {
+        animation-name: spin;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
