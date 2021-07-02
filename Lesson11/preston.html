@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="preston.css"/>
+    <script src="js/index.js" defer type="text/javascript"></script>
+    <script src="js/preston.js" defer type="text/javascript"></script>
+    <script src="js/progressiveLoading.js" defer type="text/javascript"></script>
+</head>
+
+<body>
+    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
+    <header id="menu">
+        <nav>
+            <a href="home.html">
+                <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
+            </a>
+            <a class="active" href="preston.html">
+                <span>Preston</span>
+            </a>
+            <a href="fishHaven.html">
+                <span>Fish Haven</span>
+            </a>
+            <a href="sodaSprings.html">
+                <span>Soda Springs</span>
+            </a>
+            <a href="stormCenter.html">
+                <span>Storm Center</span>
+            </a>
+            <a href="gallery.html">
+                <span>Gallery</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <a href="https://coolors.co/0c0a3e-7b1e7a-b33f62-f9564f-f3c677"> Color Scheme</a>
+        <img class="heroImage" src="Assets/Weather-Hero.jpeg" alt="hero image"/>
+        <h3>The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents - H.P. Lovecraft</h3>
+        <p>
+            "Weather Summary"
+        </p>
+        <section class="weatherForecast-Container">
+            <section class="weather-container">
+                <div class="title">
+                    <h1>Preston Weather:</h1>
+                    <label id="date">Checking the calendar...</label>
+                </div>
+                <img src="Assets/LovecraftianLogo.png" id="weather-icon" />
+                <label id="temp">Looking outside for you...</label>
+            </section>
+            <section class="forecast-container" id="forecast"></section>
+        </section>
+        
+        <section id="article">
+            <a href="https://www.google.com">Article</a>
+        </section>
+
+        
+        
+    </main>
+
+    <footer>
+        <span id="clock"></span>
+    </footer>
+</body>
+</html> 
