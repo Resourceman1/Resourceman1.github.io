@@ -1,0 +1,185 @@
+
+.town {
+    display: flex;
+    flex-flow: column;
+}
+    .town .alert {
+        flex: 1;
+        background-color: var(--ac-color);
+        display: none;
+        padding: 10px;
+    }
+        .town .alert.show {
+            display: block;
+        }
+
+        .town .alert p {
+            text-align: center;
+        }
+
+
+    .town h1,
+    .town h2 {
+        text-align: center;
+    }
+
+    .town .preview-image {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+        .town .preview-image img {
+            width: 100%;
+        }
+
+        .town .preview-image .summary {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            display: flex;
+            flex-flow: column;
+            background-color: rgba(0, 0, 0, 0.75);
+            border: 1px solid #efefef;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+            .town .preview-image .summary h2 {
+                margin: 0;
+            }
+
+            .town .preview-image .summary .data {
+                display: flex;
+                flex-flow: row;
+            }
+            .town .preview-image .summary .data .label {
+                flex: 1;
+                text-align: end;
+                padding: 0 5px;
+            }
+            .town .preview-image .summary .data .value {
+                padding: 0 5px;
+                flex: 1;
+            }
+
+    .town #forecast {
+        margin: 10px auto;
+        border: 1px solid var(--ac2-color);
+        display: flex;
+        flex-flow: row;
+    }
+
+        .town #forecast .forecast {
+            display: flex;
+            flex-flow: column;
+        }
+            .town #forecast .forecast:not(:last-child) {
+                border-right: 1px solid var(--ac2-color);
+            }
+
+            .town #forecast .forecast .day {
+                background-color: var(--ac-color);
+                border-bottom: 1px solid var(--ac2-color);
+                text-align: center;
+            }
+
+            .town #forecast .forecast .icon {
+                width: 32px;
+                margin: 5px auto;
+            }
+
+            .town #forecast .forecast .weather {
+                text-align: center;
+                margin: 5px 10px;
+            }
+
+    .town .article {
+        width: 60%;
+        margin: 20px auto;
+
+        background-color: var(--ac-color);
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+    }
+        .town .article .title {
+            display: flex;
+            flex-flow: column;
+        }
+
+            .town .article .title h2 {
+                margin: 0;
+                text-align: left;
+                font-size: 25px;
+            }
+
+            .town .article .title p {
+                margin: 0;
+                text-align: left;
+                font-size: 20px;
+                font-style: italic;
+            }
+
+        .town .article .text {
+            display: flex;
+            flex-flow: row;
+        }
+
+            .town .article .text img {
+                width: 200px;
+                height: 200px;
+                margin-left: 20px;
+            }
+
+    .town .events {
+        margin: 20px auto;
+        background-color: var(--ac2-color);
+        padding: 10px;
+    }
+        .town .events h3 {
+            font-size: 25px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .town .events p {
+            text-align: center;
+            margin: 0;
+        }
+
+@media only screen and (max-width: 40em) { 
+    .town .preview-image, 
+    .town .article {
+        width: 100%;
+    }
+
+    .town .article {
+        padding: 0;
+    }
+        .town .preview-image .summary {
+            top: 5px;
+            left: 5px;
+        }
+
+        .town .article .title h2 {
+            padding-top: 10px;
+            margin: 0 10px;
+        }
+
+        .town .article .title p {
+            margin: 0 10px;
+        }
+
+        .town .article .text {
+            flex-flow: column;
+            margin: 10px;
+        }
+
+            .town .article .text img {
+                width: 60%;
+                height: unset;
+                margin: 0 auto;
+            }
+
+}

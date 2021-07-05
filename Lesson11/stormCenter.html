@@ -1,55 +1,148 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovecraftian Weather</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css"/>
-    <script src="js/index.js" defer type="text/javascript"></script>
-    <script src="js/progressiveLoading.js" defer type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/stormcenter.css" />
 </head>
-
 <body>
-    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
-    <header id="menu">
+    <header>
+        <div class="title-bar">
+            <img src="assets/logo.png" />
+            <div class="title">
+                <h1>Lovecraftian Weather Service</h1>
+                <p>Where yesterdays cosmic horrors are todays news!</p>
+            </div>
+        </div>
         <nav>
-            <a class="active" href="home.html">
-                <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
-            </a>
-            <a href="preston.html">
-                <span>Preston</span>
-            </a>
-            <a href="fishHaven.html">
-                <span>Fish Haven</span>
-            </a>
-            <a href="sodaSprings.html">
-                <span>Soda Springs</span>
-            </a>
-            <a class="active" href="stormCenter.html">
-                <span>Storm Center</span>
-            </a>
-            <a href="gallery.html">
-                <span>Gallery</span>
-            </a>
+            <a href="home.html">Home</a>
+            <a href="town.html?city=preston">Preston</a>
+            <a href="town.html?city=soda">Soda Springs</a>
+            <a href="town.html?city=fish">Fish Haven</a>
+            <a class="active" href="stormcenter.html">Storm Center</a>
+            <a href="gallery.html">Gallery</a>
         </nav>
     </header>
-    <main>
-        <img class="heroImage" src="Assets/Weather-Hero.jpeg" alt="hero image"/>
-        <h3>The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents - H.P. Lovecraft</h3>
-        <p>
-            "Weather Summary"
-        </p>
-        <section class="fiveDayForecast">
-            <img src="Assets/5DayForecast.jpg" alt="five day forecast"/>
-            <a href='https://www.freepik.com/vectors/background'>Background vector created by macrovector - www.freepik.com</a>
-        </section>
-        <section id="article">
-            <a href="https://www.google.com">Article</a>
-        </section>
+
+    <main class="stormcenter">
+        <article class="form-input">
+            <form action="thanks.html" method="POST">
+                <div class="input">
+                    <label>Name:</label>
+                    <input id="name" type="text" required pattern="([A-Za-z]|\s){5,}" placeholder="Full name" />
+                </div>
+                <div class="input">
+                    <label>Email:</label>
+                    <input id="email" type="email" required placeholder="Email: hello@example.com" />
+                </div>
+                <div class="input">
+                    <label>Phone: </label>
+                    <input id="phone" type="phoneNumber" required placeholder="Phone: 999-999-9999" />
+                </div>
+                <div class="input">
+                    <label>Zip: </label>
+                    <input id="zip" type="number" required placeholder="Zip Code: 23424" />
+                </div>
+                <div class="input">
+                    <label>Date: </label>
+                    <input id="date" type="date" required placeholder="Date of the storm" />
+                </div>
+                <div class="input">
+                    <label>Storm Type:</label>
+                    <input id="stormtype" list="storm-suggestions" placeholder="Storm type" />
+                    <datalist id="storm-suggestions">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div class="input">
+                    <label>Storm Severity: <span id="rating">5</span></label>
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5">Default</option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                    <input type="range" max="10" min="1" value="5" 
+                        id="stormSeverity"
+                        required list="tickmarks" oninput="document.getElementById('rating').innerHTML = this.value" />
+                    
+                </div>
+                <div class="input">
+                    <label>Region: </label>
+                    <select id="stormRegion">
+                        <option disabled>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>User In-Danger</label>
+                    <span>
+                        <input type="radio" name="user-in-danger-level" value="yes" />
+                        Yes
+                    </span>
+                    <span>
+                        <input type="radio" name="user-in-danger-level" value="no" />
+                        No
+                    </span>
+                    <span>
+                        <input type="radio" name="user-in-danger-level" value="maybe" />
+                        Maybe
+                    </span>
+                </div>
+
+                <div class="input" >
+                    <textarea id="comments" placeholder="Type some comments..."></textarea>
+                </div>
+
+                <div class="input">
+                    <input class="button" type="submit" value="Submit" />
+                </div>
+            </form>
+        </article>
+
+        <footer>
+            <article class="site-footer">
+                <section class="contact">
+                    <h1>Lovecraftian Weather Service</h1>
+                    <label>123 Some Address</label>
+                    <label>Some town, ID, 23424</label>
+                    <label>Phone: 999-999-9999</label>
+                    <label>Email: tentacles@lovecraftian.weather</label>
+                </section>
+            </article>
+            <section class="copy-right">
+                <p>2020 &copy; The Lovecraftian Weather Service | Jordan Clark Dahle</p>
+                <p id="clock"></p>
+            </section>
+        </footer>
     </main>
 
-    <footer>
-        <span id="clock"></span>
-    </footer>
+
+    <button class="show-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    
+    <div class="backdrop"></div>
+
+    <script src="js/main.js" defer type="text/javascript"></script>
 </body>
-</html> 
+</html>

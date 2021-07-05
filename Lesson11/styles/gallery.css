@@ -1,0 +1,48 @@
+.gallery {
+    display: flex;
+    flex-flow: column;
+}
+
+.images {
+
+    display: flex;
+    flex-flow: row wrap;
+
+    margin: 0 auto;
+}
+
+    .images .gallery-image {
+        width: 30%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+        .images .gallery-image .description {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: var(--text-color);
+        }
+
+        .images .gallery-image:hover .description {
+            display: flex;
+        }
+
+            .images .gallery-image .description p {
+                margin: auto;
+            }
+
+@media only screen and (max-width: 40em) { 
+
+    .images {
+        flex-flow: column;
+    }
+
+        .images .gallery-image {
+            width: 95%;
+        }
+}

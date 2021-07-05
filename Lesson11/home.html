@@ -1,126 +1,67 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovecraftian Weather</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css"/>
-    <script src="js/index.js" defer type="text/javascript"></script>
-    <script src="js/windChill.js" defer type="text/javascript"></script>
-    <script src="js/progressiveLoading.js" defer type="text/javascript"></script>
-    <title>Jordan Dahle's Weather Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/home.css" />
 </head>
-
 <body>
-    <button class="menu-button" onclick="toggleMenu()">Toggle Menu</button>
-    <header id="menu">
+    <header>
+        <div class="title-bar">
+            <img src="assets/logo.png" />
+            <div class="title">
+                <h1>Lovecraftian Weather Service</h1>
+                <p>Where yesterdays cosmic horrors are todays news!</p>
+            </div>
+        </div>
         <nav>
-            <a class="active" href="home.html">
-                <img src="Assets/LovecraftianLogo.png" alt="site icon"/>
-            </a>
-            <a href="preston.html">
-                <span>Preston</span>
-            </a>
-            <a href="fishHaven.html">
-                <span>Fish Haven</span>
-            </a>
-            <a href="sodaSprings.html">
-                <span>Soda Springs</span>
-            </a>
-            <a href="stormCenter.html">
-                <span>Storm Center</span>
-            </a>
-            <a href="gallery.html">
-                <span>Gallery</span>
-            </a>
+            <a class="active" href="home.html">Home</a>
+            <a href="town.html?city=preston">Preston</a>
+            <a href="town.html?city=soda">Soda Springs</a>
+            <a href="town.html?city=fish">Fish Haven</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery.html">Gallery</a>
         </nav>
     </header>
-    <main>
-        <img class="heroImage" src="Assets/Weather-Hero.jpeg" alt="hero image"/>
-        <h3>The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents - H.P. Lovecraft</h3>
-        <section class="towns">
-            <article class="fishHaven">
-                <section class="name">
-                    <h2>Fish Haven</h2>
-                </section>
-                <section class="screenshot">
-                    <img src="Assets/Udder_Placeholder.png" alt="Placeholder image"/>
-                </section>
-                <section class="phrase">
-                    <h3>This is fish Heaven.</h3>
-                </section>
-                <section class="foundedYear">
-                    <h1>Year Founded: 1864</h1>
-                </section>
-                <section class="population">
-                    <h1>Population: 501</h1>
-                </section>
-                <section class="annualRainFall">
-                    <h1>Annual Rainfall: 14.2</h1>
-                </section>
-            </article>
-            
-            <article class="preston">
-                <section class="name">
-                    <h2>Preston</h2>
-                </section>
-                <section class="screenshot">
-                    <img src="Assets/Udder_Placeholder.png" alt="Placeholder image"/>
-                </section>
-                <section class="phrase">
-                    <h3>Home of Napoleon Dynamite.</h3>
-                </section>
-                <section class="foundedYear">
-                    <h1>Year Founded: 1866</h1>
-                </section>
-                <section class="population">
-                    <h1>Population: 5204</h1>
-                </section>
-                <section class="annualRainFall">
-                    <h1>Annual Rainfall: 16.65</h1>
-                </section>
-            </article>
-            
-            <article class="sodaSprings">
-                <section class="name">
-                    <h2>Soda Springs</h2>
-                </section>
-                <section class="screenshot">
-                    <img src="Assets/Udder_Placeholder.png" alt="Placeholder image"/>
-                </section>
-                <section class="phrase">
-                    <h3>Historic Oregon trail oasis. The soda is on us.</h3>
-                </section>
-                <section class="foundedYear">
-                    <h1>Year Founded: 1858</h1>
-                </section>
-                <section class="population">
-                    <h1>Population: 2985</h1>
-                </section>
-                <section class="annualRainFall">
-                    <h1>Annual Rainfall: 15.75</h1>
-                </section>
-            </article>
-        </section>
-        <section class="weatherSummary">
-            <input type="text" id="windSpeed" value="Enter Windspeed">
-            <input type="text" id="temperature" value="Enter Temperature">
-            <button type="button" onclick="windChillCalc()">Calculate WindChill</button>
-            <div id="outputDiv">Windchill: </div>   
-        </section>
-        <section class="fiveDayForecast">
-            <img src="Assets/5DayForecast.jpg" alt="five day forecast"/>
-            <a href='https://www.freepik.com/vectors/background'>Background vector created by macrovector - www.freepik.com</a>
-        </section>
-        <section id="article">
-            <a href="https://www.google.com">Article</a>
-        </section>
-        
-    </main>
+    
+    <main class="home">
 
-    <footer>
-        <h4>Contact Info: ________</h4>
-        <span id="clock"></span>
-    </footer>
+        <article class="towns" id="towns"></article>
+
+        <footer>
+            <article class="site-footer">
+
+                <section class="contact">
+                    <h1>Lovecraftian Weather Service</h1>
+                    <label>123 Some Address</label>
+                    <label>Some town, ID, 23424</label>
+                    <label>Phone: 999-999-9999</label>
+                    <label>Email: tentacles@lovecraftian.weather</label>
+                </section>
+
+            </article>
+            <section class="copy-right">
+                <p>2020 &copy; The Lovecraftian Weather Service | Jordan Clark Dahle</p>
+                <p id="clock"></p>
+                <p>Attributes | <a href="https://openweathermap.org/">OpenWeather</a></p>
+            </section>
+        </footer>
+    </main>
+    
+    <button class="show-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <div class="backdrop"></div>
+
+    <script src="js/main.js" defer type="text/javascript"></script>
+    <script src="js/home.js" defer type="text/javascript"></script>
 </body>
-</html> 
+</html>

@@ -1,0 +1,61 @@
+.stormcenter {
+    display: flex;
+    flex-flow: column;
+}
+
+.form-input {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+}
+
+.form-input form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.input {
+    width: 300px;
+    margin: 5px auto;
+}
+
+    .input textarea {
+        width: 100%;
+        height: 200px;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid var(--ac2-color);
+        color: var(--text-color);
+    }
+
+    .input input,
+    .input select {
+        width: 100%;
+        margin: 20px 0;
+        background-color: transparent;
+        outline: none;
+        border: none;
+
+        border-bottom: 1px solid var(--ac2-color);
+        color: var(--text-color);
+        font-size: 20px;
+    }
+
+        .input input.button {
+            border: 1px solid var(--ac2-color);
+        }
+            .input input.button:hover {
+                border: 1px solid var(--ac-color);
+            }
+
+        .input span {
+            display: block;
+        }
+            .input span input {
+                width: unset;
+            }
+
+.thanks h1 {
+    text-align: center;
+}

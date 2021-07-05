@@ -1,0 +1,64 @@
+.towns {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+    .towns .town {
+        display: flex;
+        flex-flow: column;
+        width: 30%;
+        margin: 50px auto;
+    }
+    
+        .towns .town img {
+            width: 100%;
+        }
+
+        .towns .town .details {
+            background-color: var(--ac-color);
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+            .towns .town .details h2 {
+                font-size: 35px;
+                background-color: var(--ac2-color);
+            }
+
+            .towns .town .details h2,
+            .towns .town .details p {
+                text-align: center;
+                margin: 0;
+            }
+
+                .towns .town .details p.motto {
+                    font-size: 18px;
+                    font-style: italic;
+                }
+
+                .towns .town .details p.data {
+                    font-size: 20px;
+                    margin: 10px;
+                }
+
+@media only screen and (max-width: 40em) { 
+    .towns {
+        flex-flow: column;
+    }
+
+        .towns .town {
+            width: 95%;
+            margin: 20px auto;
+            flex-flow: row;
+        }
+
+            .towns .town:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .towns .town .details,
+            .towns .town img {
+                width: 50%;
+            }
+}

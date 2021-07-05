@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovecraftian Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/town.css" />
+</head>
+<body>
+    <header>
+        <div class="title-bar">
+            <img src="assets/logo.png" />
+            <div class="title">
+                <h1>Lovecraftian Weather Service</h1>
+                <p>Where yesterdays cosmic horrors are todays news!</p>
+            </div>
+        </div>
+        <nav id="nav">
+            <a href="home.html">Home</a>
+            <a href="town.html?city=preston">Preston</a>
+            <a href="town.html?city=soda">Soda Springs</a>
+            <a href="town.html?city=fish">Fish Haven</a>
+            <a href="stormcenter.html">Storm Center</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main class="town">
+        <article id="alert" class="alert"></article>
+
+        <h1 id="town-title"></h1>
+
+        <article class="preview-image">
+            <img id="bg-image" />
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <div class="data">
+                    <div class="label">Condition:</div>
+                    <div class="value" id="weather-condition"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Currently:</div>
+                    <div class="value" id="weather-currently"></div>
+                </div>
+                <div class="data">
+                    <div class="label">High:</div>
+                    <div class="value" id="weather-high"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Wind chill:</div>
+                    <div class="value" id="weather-chill"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Humidity:</div>
+                    <div class="value" id="weather-humidity"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Wind Speed:</div>
+                    <div class="value" id="weather-speed"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Population:</div>
+                    <div class="value" id="details-population"></div>
+                </div>
+            </section>
+        </article>
+
+        <h2>5 Day Forecast</h2>
+
+        <article id="forecast"></article>
+        
+        <article class="article">
+            <div class="title">
+                <h2 id="article-title"></h2>
+                <p>by <span id="article-author"></span></p>
+            </div>
+            <section class="text">
+                <p id="article-text"></p>
+                <img id="article-image" />
+            </section>
+        </article>
+
+        <article id="events" class="events">
+            <h3>Events:</h3>
+        </article>
+
+        <footer>
+            <article class="site-footer">
+                <section class="contact">
+                    <h1>Lovecraftian Weather Service</h1>
+                    <label>123 Some Address</label>
+                    <label>Some town, ID, 23424</label>
+                    <label>Phone: 999-999-9999</label>
+                    <label>Email: tentacles@lovecraftian.weather</label>
+                </section>
+
+                <section class="map">
+                    <iframe id="map" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+            </article>
+            <section class="copy-right">
+                <p>2020 &copy; The Lovecraftian Weather Service | Jordan Clark Dahle</p>
+                <p id="clock"></p>
+            </section>
+        </footer>
+    </main>
+
+    <button class="show-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <div class="backdrop"></div>
+
+    <script src="js/main.js" defer type="text/javascript"></script>
+    <script src="js/town.js" defer type="text/javascript"></script>
+</body>
+</html>

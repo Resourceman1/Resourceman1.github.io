@@ -1,0 +1,219 @@
+:root {
+    --bg-color: rgb(30, 30, 30);
+    --ac-color: rgb(0, 122, 204);
+    --ac2-color: #0C0A3E; /*rgb(22, 130, 93);*/
+    --color: #fff;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    color: var(--color);
+    background-color: var(--bg-color);
+    font-family: Roboto;
+    font-weight: bold;
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    background-color: var(--ac-color);
+}
+    header .title-bar {
+        margin: 10px auto;
+        display: flex;
+        flex-flow: row;
+    }
+
+        header .title-bar img {
+            width: 128px;
+            height: 128px;
+            margin-right: 20px;
+        }
+
+        header .title-bar .title {
+            margin: auto 0;
+            display: flex;
+            flex-flow: column;
+        }
+
+            header .title-bar .title h1 {
+                margin: 0;
+                font-size: 35px;
+            }
+
+            header .title-bar .title p {
+                margin: 0;
+            }
+
+    header nav {
+        display: flex;
+        flex-flow: row;
+        background-color: var(--ac2-color);
+        justify-content: center;
+    }
+
+        header nav a {
+            padding: 15px 20px;
+            color: var(--color);
+            font-size: 25px;
+            text-decoration: none;
+        }
+
+            header nav a.active {
+                background-color: var(--ac-color);
+            }
+
+            header nav a:hover {
+                text-decoration: underline;
+            }
+
+.show-menu {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: none;
+    transition: all 200ms;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 900;
+}
+    
+    .show-menu div {
+        width: 35px;
+        height: 5px;
+        background-color: var(--color);
+        margin: 6px 0;
+        transition: all 200ms;
+    }
+
+    .show-menu:hover div {
+        transform: rotate(180deg);
+    }
+
+main {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: var(--ac2-color);
+    display: flex;
+    flex-flow: column;
+}
+
+    footer .site-footer {
+        display: flex;
+        flex-flow: row;
+        margin: 10px auto;
+    }
+
+    footer .site-footer .contact {
+        margin: auto 10px;
+        display: flex;
+        flex-flow: column;
+    }
+
+        footer .site-footer .contact h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+    footer .copy-right {
+        padding: 10px;
+        background-color: var(--ac-color);
+    }
+
+        footer .copy-right p {
+            text-align: center;
+            margin: 0;
+            font-size: 12px;
+        }
+
+.lazy-load {
+    margin: 10px auto;
+    width: 100%;
+}
+
+    .lazy-load.loaded {
+        animation-name: spin;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 40em) { 
+    header {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: -300px;
+        transition: all 200ms;
+        z-index: 900;
+    }
+
+        header .title-bar {
+            flex-flow: column;
+        }
+
+            header .title-bar img {
+                margin: 10px auto;
+            }
+
+            header .title-bar .title h1 {
+                font-size: 20px;
+                margin: 0 auto;
+            }
+
+            header .title-bar .title p {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+        header nav {
+            flex-flow: column;
+        }
+
+            header nav a {
+                text-align: center;
+            }
+
+    .show-menu {
+        display: block;
+    }
+
+    main {
+        margin-top: 55px;
+    }
+
+    body.expanded header {
+        left: 0;
+    }
+
+    body.expanded .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
