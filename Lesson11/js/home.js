@@ -4,8 +4,11 @@ async function main() {
 
     console.log('DATA', towns);
 
+    const filteredTowns = ['Preston', 'Soda Springs', 'Fish Haven']
     for(const town of towns) {
-
+        if (filteredTowns.indexOf(town.name) === -1){
+            continue;
+        }
         console.log('TOWN', town);
 
         const wrapper = document.createElement('div');
@@ -28,7 +31,6 @@ async function main() {
         <img class="lazy" src="assets/placeholder.jpg" data-src="assets/cities/${town.photo}" />`;
 
         wrapper.innerHTML = html;
-
         target.appendChild(wrapper);
     }
 
