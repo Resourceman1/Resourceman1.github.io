@@ -1,0 +1,121 @@
+[
+    {
+        "name": "Horseshoe Donuts",
+        "image": "HorseShoe.png",
+        "owner": "Liz Schulze",
+        "address": {
+            "line1": "481 W. Highway 105, Suite 202",
+            "city": "Monument",
+            "state": "CO",
+            "zip": "80132"
+        },
+        "phone": {
+            "primary": "(978) 376-0777",
+            "alt": "(719) 358-8329"
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_horseshoedonuts",
+        "email": "liz.schulze@msimobility.com"
+    },
+    {
+        "name": "The Academy of Martial Arts",
+        "image": "Academy.jpg",
+        "owner": "Thomas Lynn",
+        "address": {
+            "line1": "1435 Cipriani Loop",
+            "city": "Monument",
+            "state": "CO",
+            "zip": "80132"
+        },
+        "phone": {
+            "primary": "(719) 800-2551",
+            "alt": "(786) 218-0019"
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_jiujitsu",
+        "email": "tomlynnjr@gmail.com"
+    },
+    {
+        "name": "Simple Computer Repair",
+        "image": "SimpleComp.png",
+        "owner": "Eric Metzger",
+        "address": {
+            "line1": "1445 Cipriani Loop",
+            "city": "Monument",
+            "state": "CO",
+            "zip": "80132"
+        },
+        "phone": {
+            "primary": "(719) 247-8611",
+            "alt": ""
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_SimpleComputer",
+        "email": "eric@scr-cos.com"
+    },
+    {
+        "name": "The Bussey Law Firm, P.C.",
+        "image": "Bussey.jpg",
+        "owner": "Timothy Bussey",
+        "address": {
+            "line1": "12 E. Boulder Street",
+            "city": "Colorado Springs",
+            "state": "CO",
+            "zip": "80903"
+        },
+        "phone": {
+            "primary": "(719) 475-2555",
+            "alt": "(719) 301-2629"
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_TheBussey",
+        "email": "tim@timothybussey.com"
+    },
+    {
+        "name": "Firma IT Solutions",
+        "image": "Firma It.jpg",
+        "owner": "Rodney Gullatte, Jr.",
+        "address": {
+            "line1": "3609 Austin Bluffs Pkwy",
+            "city": "Colorado Springs",
+            "state": "CO",
+            "zip": "80918"
+        },
+        "phone": {
+            "primary": "(719) 377-6603",
+            "alt": ""
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_coloradocyber",
+        "email": "admin@firmaitss.com"
+    },
+    {
+        "name": "Techno Chaos",
+        "image": "Techno.jpg",
+        "owner": "Jeanette Breton",
+        "address": {
+            "line1": "80 E Stirrup Trail",
+            "city": "Monument",
+            "state": "CO",
+            "zip": "80132"
+        },
+        "phone": {
+            "primary": "(281) 410-1768",
+            "alt": ""
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_TechnoChaos",
+        "email": "jeanette@techno-chaos.com"
+    },
+    {
+        "name": "Black Hills Energy",
+        "image": "Black Hills.png",
+        "owner": "Tom Pogue",
+        "address": {
+            "line1": "PO Box 668",
+            "city": "Palmer Lake",
+            "state": "CO",
+            "zip": "80133"
+        },
+        "phone": {
+            "primary": "(719) 488-0739 ",
+            "alt": ""
+        },
+        "website": "https://tri.lakes.chamberofcommerce.me/trilakes/mem_BHECOS",
+        "email": "tom.pogue@blackhillscorp.com"
+    }
+]
