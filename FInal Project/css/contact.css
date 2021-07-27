@@ -1,17 +1,21 @@
 section.boardMembers {
     display: flex;
     flex-flow: row wrap;
-    max-width: 400px;
-    justify-content: left;
 }
     section.boardMembers div {
         display: flex;
         flex-flow: column;
         background-color: var(--header-color);
         margin: 5px auto;
+        width: 400px;
         max-width: 400px;
         border-radius: 15px
     }
         div p, h1, h2, h3, a {
             margin: 5px auto;
         }
+h1.boardTitle {
+    color: var(--heading-text-color);
+    border-top: solid red 2px;
+    width: 100%;
+}
