@@ -1,0 +1,32 @@
+img {
+    margin: 50px auto;
+    max-width: 60%;
+}
+article {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+}
+    .eventOne {
+        display: flex;
+        flex-flow: row;
+        text-align: left;
+        max-width: 450px;
+        margin: 15px auto;
+        background-color: var(--header-color);
+        border-radius: 15px;
+    }
+    .eventTwo {
+        display: flex;
+        flex-flow: row;
+        text-align: left;
+        max-width: 450px;
+        margin: 15px auto;
+        background-color: var(--header-color);
+        border-radius: 15px;
+    }
+        .eventTwo img {
+            justify-content: left;
+        }

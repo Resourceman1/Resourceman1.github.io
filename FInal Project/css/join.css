@@ -1,0 +1,5 @@
+@media only screen and (max-width: 40em) {
+    div.input {
+        max-width: 150px;
+    }
+}

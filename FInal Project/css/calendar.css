@@ -1,0 +1,71 @@
+/* body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+} */
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+#calendar {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+    #calendar .header {
+        display: flex;
+        flex-flow: row;
+    }
+        #calendar .header div {
+            flex: 1;
+        }
+
+            #calendar .header div:not(:first-child) {
+
+                border-left: 1px dashed grey;
+            }
+
+    #calendar .week {
+        display: flex;
+        flex-flow: row;
+        flex: 1;
+    }
+        #calendar .week .day {
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+        }
+
+            #calendar .week .day:not(:first-child) {
+
+                border-left: 1px dashed grey;
+            }
+
+            #calendar .week .day.today header {
+                background-color: lightblue;
+                color: black;
+            }
+
+            #calendar .week .day header {
+                /* border-bottom: 1px solid blue;*/
+                margin: 2px;
+                text-align: center;
+                width: unset;
+            }
+
+            #calendar .week .day .events {
+                flex: 1;
+                color: white;
+            }
+            #calendar .week .day .events .event {
+                flex: 1;
+                color: white;
+            }

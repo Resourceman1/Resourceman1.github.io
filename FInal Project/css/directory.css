@@ -1,0 +1,22 @@
+.direct {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+    .direct article {
+        display: flex;
+        flex-flow: column;
+        background-color: var(--header-color);
+        border-radius: 15px;
+        margin: 15px;
+        min-width: 350px;
+    }
+        .direct article p {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 10px auto;
+        }
+        .direct article img {
+            max-width: 200px;
+            margin: 0 auto;
+        }

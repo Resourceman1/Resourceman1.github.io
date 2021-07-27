@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+    <link rel="stylesheet" href="css/directory.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="titleBar">
+            <img href="assets/logo.png">
+        </div>
+        <nav>
+            <a class="active" href="home.html">Home</a>
+            <a href="join.html">Join</a>
+            <a href="monument.html">Monument</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="directory.html">Directory</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="home">
+        <article class="preview-image">
+            <img src="assets/Town.jpg" alt="background image" />
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <div class="data">
+                    <div class="label">Condition:</div>
+                    <div class="value" id="weather-condition"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Currently:</div>
+                    <div class="value" id="weather-currently"></div>
+                </div>
+                <div class="data">
+                    <div class="label">High:</div>
+                    <div class="value" id="weather-high"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Wind chill:</div>
+                    <div class="value" id="weather-chill"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Humidity:</div>
+                    <div class="value" id="weather-humidity"></div>
+                </div>
+                <div class="data">
+                    <div class="label">Wind Speed:</div>
+                    <div class="value" id="weather-speed"></div>
+                </div>
+            </section>
+        </article>
+
+        <h2>5 Day Forecast</h2>
+
+        <article class="wrapper" id="forecast"></article>
+
+        <img class="heroImg" src="assets/Monument 2 .jpeg"/>
+        <h1>The Chamber</h1>
+        <p>The Monument Chamber of Commerce exists for one simple goal. To bring the businesses of the municipality together, and to help them grow and flourish. Not only do we create a better community by helping facilitate communication between all the business owners of the area, but we also provide assistance in resources such as business training, advertising, sponsorships, and a whole slew of other benefits. We hope to help create an environment in which anyone with the desire to start a business feels that they have the support and assistance behind them to help their dreams stand far taller and sturdier. </p>        
+        
+        <article class=events>
+            <h1>Events</h1>
+            <div class=eventOne>
+                <img src="assets/Bines and Brews.jpg"/>
+                <p>Bines & brews beer fest, Saturday, September 18 8-11 AM, Pikes Peak brewing company.</p>
+            </div>
+            <div class=eventTwo>
+                <img src="assets/Farmers.jpg"/>
+                <p>Monument Hill Farmers Market, Tomorrow, 1-7 PM, 66 Jefferson's Street</p>
+            </div>
+        </article>
+
+        <h1>Check out our local businesses!</h1>
+        <section  class="direct" id="ad"></section>
+    </main>
+    <footer>
+        <section>
+            <div class="socials">
+                <a href="https://www.youtube.com/">
+                    <img alt="youtube Logo" src="assets/youtubeLogo.png"/>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img alt="youtube Logo" src="assets/facebook Logo.png"/>
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img alt="youtube Logo" src="assets/tiwtter Logo.png"/>
+                </a>
+            </div>
+            <div class="contactInfo">
+                <h1>Address:166 2nd St, Monument, CO 80132</h1>
+                <h1>Phone#:(719) 481-3282</h1>
+                <h1>Email: admin@trilakeschamber.com</h1>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49557.35760556828!2d-104.88890635939215!3d39.07606989504805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876cad8f6b05f3e5%3A0x21536aeb400e7fdb!2sMonument%2C%20CO!5e0!3m2!1sen!2sus!4v1627011568586!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </footer>
+
+    <button class="showMenu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <div class="backdrop"></div>
+    
+    <script src="js/config.js"></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/index.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+    <link rel="stylesheet" href="css/monument.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="titleBar">
+            <img src="assets/ChamberLogo.png"/>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="join.html">Join</a>
+            <a class="active" href="monument.html">Monument</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="directory.html">Directory</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="home">
+        <img src="assets/Monument 1.jpeg"/>
+        <h1>About Monument</h1>
+        <p>The Town of Monument is a statutory town situated at the base of the Rampart Range in El Paso County, Colorado, United States. The town is part of the Colorado Springs Metropolitan Statistical Area, which had an estimated population of 700,000 in 2019. Monument is bordered by Pike National Forest on the west, Colorado Springs and the United States Air Force Academy to the south, foothills and rock outcroppings to the north, and rolling plains to the east. Monument was first settled as a stop along the Rio Grande Railroad in 1872, and the area was incorporated as a town called Henry's Station in 1879, but the name was later changed to Monument. The town population was 7398 at the 2020 United States Census, an increase from the population of 1,971 in 2000. On April 1st, 2019, the town declared itself to be a Second Amendment sanctuary.</p>
+        <img src="assets/Monument 2 .jpeg"/>
+        <h2 class="history">Monument's History</h2>
+        <p>Monument's first homesteaders arrived in 1865 to mark out the town's preliminary shape, but settlement increased when Monument became a stop along the Rio Grande Railroad in 1872. The area was incorporated as a town called Henry's Station, after prominent settler Henry Limbach, on June 2, 1879, and the first town meeting was held July 3, 1879. However, three years later the name was changed to Monument after Monument Creek and Monument Rock in the west. The first records of the town can be found in various volumes in the El Paso County Courthouse dating back to 1872. With the help of the railroad, which brought in necessities, people started small businesses and started to create a town.</p>
+        
+        <section class="weather">
+            <article class="currentWeather"> </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="socials">
+                <a href="https://www.youtube.com/">
+                    <img alt="youtube Logo" src="assets/youtubeLogo.png"/>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img alt="youtube Logo" src="assets/facebook Logo.png"/>
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img alt="youtube Logo" src="assets/tiwtter Logo.png"/>
+                </a>
+            </div>
+            <div class="contactInfo">
+                <h1>Address:166 2nd St, Monument, CO 80132</h1>
+                <h1>Phone#:(719) 481-3282</h1>
+                <h1>Email: admin@trilakeschamber.com</h1>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49557.35760556828!2d-104.88890635939215!3d39.07606989504805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876cad8f6b05f3e5%3A0x21536aeb400e7fdb!2sMonument%2C%20CO!5e0!3m2!1sen!2sus!4v1627011568586!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </footer>
+    
+    <script src="js/index.js" defer></script>
+
+    <button class="showMenu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    
+    <div class="backdrop"></div>
+
+</body>
+</html>

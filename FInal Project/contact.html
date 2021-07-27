@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="titleBar">
+            <img src="assets/ChamberLogo.png"/>
+        </div>
+        <nav>
+            <a class="active" href="home.html">Home</a>
+            <a href="join.html">Join</a>
+            <a href="monument.html">Monument</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="directory.html">Directory</a>
+            <a class= "active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="home">
+        <article class="form-Input">
+            <form action="thanks.html" method="GET">
+                <div class="input">
+                    <label>Name:</label>
+                    <input id="name" type="text" required pattern="([A-Za-z]|\s){5,}" placeholder="Full name" />
+                </div>
+                <div class="input">
+                    <label>Email:</label>
+                    <input id="email" type="email" required placeholder="Email: hello@example.com" />
+                </div>
+                <div class="input">
+                    <label>Phone: </label>
+                    <input id="phone" type="phoneNumber" required placeholder="Phone: 999-999-9999" />
+                </div>
+            </form>
+        </article>
+        <h1>Address:166 2nd St, Monument, CO 80132</h1>
+        <h1>Phone#:(719) 481-3282</h1>
+        <h1>Email: admin@trilakeschamber.com</h1>
+        <section class="boardMembers">
+            <div>
+                <h1>Kelly Mcpherson</h1>
+                <h2>Chair</h2>
+                <h3>Knies, Helland & McPherson Law</h3>
+                <p>719-635-8499</p>
+                <a href="http://www.khmattorneysatlaw.com/" target="_blank">Knies, Helland &amp; McPherson Law</a>
+                <a href="mailto:kmcpherson@khmattorneysatlaw.com">kmcpherson@khmattorneysatlaw.com&ZeroWidthSpace;</a>
+            </div>
+            <div>
+                <h1>Chris Banta</h1>
+                <h2>Treasurer</h2>
+                <h3>Hoelting & Company, Inc.</h3>
+                <p>719-630-1091</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="socials">
+                <a href="https://www.youtube.com/">
+                    <img alt="youtube Logo" src="assets/youtubeLogo.png"/>
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img alt="youtube Logo" src="assets/facebook Logo.png"/>
+                </a>
+                <a href="https://twitter.com/?lang=en">
+                    <img alt="youtube Logo" src="assets/tiwtter Logo.png"/>
+                </a>
+            </div>
+            <div class="contactInfo">
+                <h1>Address:166 2nd St, Monument, CO 80132</h1>
+                <h1>Phone#:(719) 481-3282</h1>
+                <h1>Email: admin@trilakeschamber.com</h1>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49557.35760556828!2d-104.88890635939215!3d39.07606989504805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876cad8f6b05f3e5%3A0x21536aeb400e7fdb!2sMonument%2C%20CO!5e0!3m2!1sen!2sus!4v1627011568586!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </footer>
+
+    <button class="showMenu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <div class="backdrop"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/index.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+    --header-color: #902923;
+    --nav-color: #B9BAA3;
+    --heading-text-color: #A22C29;
+    --paragraph-text:#D6D5C9;
+    --background-color: #0A100D;
+    --color: #fff;
+}
+body,html{
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    font-weight: bold;
+    position: relative;
+}
+header {
+    background-color: var(--header-color);
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+}
+header img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 40%
+}
+    header nav {
+        display: flex;
+        flex: 1;
+        flex-flow: row;
+        justify-content: center;
+    }
+        header nav a{
+            padding: 15px 20px;
+            font-size: 25px;
+            text-decoration: none;
+            background-color: var(--background-color);
+            margin: 10px;
+            border-radius: 15px;
+            color: var(--nav-color);
+        }
+
+            header nav a.active {
+                text-decoration: underline;
+            }
+main {
+    display: flex;
+    flex-flow: column;
+    color: var(--paragraph-text);
+    width: 100%;
+    text-align: center;
+    font-family: Encode Sans;
+}
+footer {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    background-color: var(--header-color);
+    margin: 0 auto;
+    justify-content: center;
+}
+    footer section {
+        display: flex;
+        flex-flow: column;
+        margin: 10px;
+    }
+
+        footer section .contactInfo h1{
+            font-size: 20px;
+            display: flex;
+            flex-flow: column;
+        }
+
+        footer section img {
+            width: 100px;
+        }
+        
+.showMenu {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: none;
+    transition: all 200ms;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 900;
+}
+    
+    .showMenu div {
+        width: 35px;
+        height: 5px;
+        background-color: var(--color);
+        margin: 6px 0;
+        transition: all 200ms;
+    }
+
+    .showMenu:hover div {
+        transform: rotate(180deg);
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    header {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: -300px;
+        transition: all 200ms;
+        z-index: 900;
+    }
+        header nav, div {
+            margin-top: 25px;
+            display: flex;
+            flex-flow: column;   
+        }
+    .showMenu {
+        display: block;
+    }
+
+    main {
+        margin-top: 55px;
+    }
+
+    body.expanded header {
+        left: 0;
+    }
+
+    body.expanded .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}

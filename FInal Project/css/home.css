@@ -1,0 +1,119 @@
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+}
+    .eventOne {
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+        max-width: 450px;
+        margin: 15px auto;
+        background-color: var(--header-color);
+        border-radius: 15px;
+    }
+        .eventOne img {
+            display: flex;
+            flex-flow: column;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+    .eventTwo {
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+        max-width: 450px;
+        margin: 15px auto;
+        background-color: var(--header-color);
+        border-radius: 15px;
+    }
+        .eventTwo img {
+            display: flex;
+            flex-flow: column;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+main p{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+main img.heroImg {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 45%;
+}
+
+main .preview-image {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+    main .preview-image img {
+        width: 100%;
+    }
+
+    main .preview-image .summary {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        flex-flow: column;
+        background-color: rgba(0, 0, 0, 0.75);
+        border: 1px solid #efefef;
+        border-radius: 10px;
+        padding: 10px;
+        width: 40%;
+    }
+
+        main .preview-image .summary h2 {
+            margin: 0;
+        }
+
+        main .preview-image .summary .data {
+            display: flex;
+            flex-flow: row;
+        }
+        main .preview-image .summary .data .label {
+            flex: 1;
+            text-align: end;
+            padding: 0 5px;
+        }
+        main .preview-image .summary .data .value {
+            padding: 0 5px;
+            flex: 1;
+        }
+
+main #forecast {
+    margin: 10px auto;
+    border: 1px solid var(--ac2-color);
+    display: flex;
+    flex-flow: row;
+}
+
+    main #forecast .forecast {
+        display: flex;
+        flex-flow: column;
+    }
+        main #forecast .forecast:not(:last-child) {
+            border-right: 1px solid var(--ac2-color);
+        }
+
+        main #forecast .forecast .day {
+            background-color: var(--ac-color);
+            border-bottom: 1px solid var(--ac2-color);
+            text-align: center;
+        }
+
+        main #forecast .forecast .icon {
+            width: 32px;
+            margin: 5px auto;
+        }
+
+        main #forecast .forecast .weather {
+            text-align: center;
+            margin: 5px 10px;
+        }
